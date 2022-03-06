@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Pastelería">
+    <meta name="author" content="Porfirio C. López">
+    <meta name="generator" content="Bootstrap">
+    <title>Pastelería LD</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#7952b3">
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+
+        body {
+            background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+        }
+
+        .container {
+        max-width: 960px;
+        }
+
+        .pricing-header {
+        max-width: 700px;
+        }       
+        .container img {
+          width: 120px;
+          height: 100px;
+        }
+
+        .container .banner {
+          width: 500px;
+          height: 400px;
+        }
+        .container h3 {
+          font-size: calc(0.7rem + .6vw);
+        } 
+        .container h3 {
+          font-size: 1.3rem;
+        } 
+
+        .blue {
+          color: blue;
+          background-color: rgb(238, 241, 241);
+        }
+
+        .card-header {
+          padding: 0.3rem 0.3rem;
+          background-color: rgb(224, 123, 224);
+        }
+
+        @media (min-width: 1200px) {
+          .h4, h4 {
+              font-size: 1.3rem;
+          }
+      }
+    </style>  
+</head>
+<body>
+    
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <img class="me-3 mb-1" src="./assets/imgs/logoOk.jpeg" alt="Icon" width="70px">
+        <span class="fs-4">Pastelería Las Delicias</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Pasteles</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Sabores</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Adornos</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Pedidos</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="index-pastelero.html">Administración</a>
+      </nav>
+    </div>
+
+    
+  </header>
+
+      <div class="container py-3">
+        
+      
+        <main>
+            <form action="/pedidos.html" method="post">           
+            <div id="myCarousel" class="carousel slide center" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="container text-center">
+                    <img class="banner" src="assets/imgs/slider1.jpg" alt="slider">
+                    <div class="carousel-caption">
+                      <!-- <h1>Example headline.</h1> -->
+                      <!-- <p>Some representative placeholder content for the first slide of the carousel.</p> -->
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="container text-center">
+                    <img class="banner" src="assets/imgs/slider2.jpg" alt="slider">
+                    <div class="carousel-caption text-start">
+                      <!-- <h1>Another example headline.</h1>
+                      <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container text-center">
+                    <img class="banner" src="assets/imgs/slider3.jpg" alt="slider">
+                    <div class="carousel-caption text-start">
+                      <!-- <h1>One more for good measure.</h1>
+                      <p>Some representative placeholder content for the third slide of this carousel.</p> -->
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev blue" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon blue" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next blue" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h2 class="display-4 fw-normal">Pasteles</h2>
+                <p class="fs-5 text-muted">Encuentra el mejor pastel para ti.</p>
+            </div>
+            
+          <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">              
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Individual</h4>
+                  </div>                
+                  <h2 class="card-title pricing-card-title">$70.<small class="text-muted fw-light">00</small></h2>
+                  <img src="assets/imgs/individual.jpg">
+                  <input type="radio" name="tamano" value="individual">
+                </div>
+              </label>
+
+            </div>
+            <div class="col">              
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Chico</h4>
+                  </div>                
+                  <h2 class="card-title pricing-card-title">$170.<small class="text-muted fw-light">00</small></h2>
+                  <img src="assets/imgs/chico.jpg">
+                  <input type="radio" name="tamano" value="chico">
+                </div>
+              </label>
+            </div>
+            <div class="col">             
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Mediano</h4>
+                  </div>                
+                  <h2 class="card-title pricing-card-title">$270.<small class="text-muted fw-light">00</small></h2>
+                  <img src="assets/imgs/mediano.jpg">
+                  <input type="radio" name="tamano" value="mediano">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+                <label class="card mb-3 rounded-3 shadow-sm">
+                  <div class="card-body">  
+                    <div class="card-header">
+                      <h4 class="my-0 fw-normal">Grande</h4>
+                    </div>                
+                    <h2 class="card-title pricing-card-title">$370.<small class="text-muted fw-light">00</small></h2>
+                    <img src="assets/imgs/grande.jpg">
+                    <input type="radio" name="tamano" value="grande">
+                  </div>
+                </label>
+              </div>
+          </div>
+      
+          <h2 class="display-6 text-center mb-4">Elige el sabor</h2>
+          <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Chocolate $80</h4>
+                  </div>                                  
+                  <img src="assets/imgs/chocolate.jpg">
+                  <input type="radio" name="sabor" value="chocolate">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Fresa $90</h4>
+                  </div>                                  
+                  <img src="assets/imgs/fresa.jpg">
+                  <input type="radio" name="sabor" value="fresa">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Cajeta $80</h4>
+                  </div>                                  
+                  <img src="assets/imgs/galletasOreo.jpg">
+                  <input type="radio" name="sabor" value="cajeta">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Limón $100</h4>
+                  </div>                                  
+                  <img src="assets/imgs/limon.jpg">
+                  <input type="radio" name="sabor" value="crunch">
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <h2 class="display-6 text-center mb-4">Elige tu decoración</h2>
+          <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Frutos $10</h4>
+                  </div>                                  
+                  <img src="assets/imgs/frutosSecos.jpg">
+                  <input type="radio" name="decoracion" value="geometrica">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Almendras $90</h4>
+                  </div>                                  
+                  <img src="assets/imgs/almendras.jpg">
+                  <input type="radio" name="decoracion" value="floral">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">Fresas $80</h4>
+                  </div>                                  
+                  <img src="assets/imgs/A-fresa.jpg">
+                  <input type="radio" name="decoracion" value="fresas">
+                </div>
+              </label>
+            </div>
+            <div class="col">                
+              <label class="card mb-3 rounded-3 shadow-sm">
+                <div class="card-body">  
+                  <div class="card-header">
+                    <h4 class="my-0 fw-normal">3 Leches $100</h4>
+                  </div>                                  
+                  <img src="assets/imgs/3leches.jpg">
+                  <input type="radio" name="decoracion" value="crea">
+                </div>
+              </label>
+            </div>
+          </div>
+          
+          <h2 class="display-6 text-center mb-4">Registra tus datos para tu pedido</h2>
+            <div class="row">
+                <div class="col-md-2">                
+                </div>
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@mail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">                    
+                        <button type="submit" class="btn btn-outline-success">Enviar Pedido</button>
+                        <button type="reset" class="btn btn-outline-danger">Limpiar</button>
+                    </div>
+                </div>                
+                <div class="col-md-2">                  
+                </div>  
+            </div>
+          </form>
+        </main>
+      
+        <footer class="pt-3 pt-md-1 border-top">
+          <div class="row">
+            <div class="col-4">
+              <img class="mb-2" src="./assets/imgs/logoOk.jpeg" alt="" width="150" height="150">              
+            </div>
+            <div class="col-8">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><strong>Visitanos  en Leyva 300 Col. Centro, Los Mochis, Sinaloa</strong> </li>
+                <li class="mb-1"><strong>Marcanos al <a class="link-secondary text-decoration-none" href="tel:6681150520">6681150520</a></strong></li>
+                <li class="mb-1"><strong>Atendemos de 8:00am a 8:00pm todos los días!!</strong> </li>
+              </ul>              
+            </div>            
+          </div>
+          <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+        </footer>
+      </div>
+      
+      <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
